@@ -1,0 +1,167 @@
+@media (max-width: 875px) {
+  .header {
+    .logo {
+      width: 64px;
+    }
+
+    .navbar {
+      .nav-item {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .about {
+    &-container {
+      .about-wrapper {
+        flex-direction: column;
+
+        .about-img,
+        .about-info {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .contact {
+    &-container {
+      .contact-wrapper {
+        flex-direction: column;
+        height: 100%;
+
+        .google-map-container,
+        .contact-infos {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    &-container {
+      padding: 10px 50px;
+    }
+
+    .logo {
+      width: 64px;
+    }
+
+    .navbar {
+      .nav-item {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .menu {
+    &-container {
+      .menu-cards {
+        flex-direction: column;
+        gap: 40px;
+        .menu-card {
+          .card-img {
+            width: 30%;
+          }
+        }
+      }
+    }
+  }
+
+  .product {
+    &-container {
+      .product-cards {
+        .product-card {
+          height: 350px;
+          .card-img {
+            width: 50%;
+            height: 50%;
+          }
+        }
+      }
+    }
+  }
+
+  .contact-screen,.review-screen,.product-screen,.menu-screen,.about-screen {
+    margin:  90px 0px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    &-container {
+      .navbar {
+        display: none;
+      }
+
+      .icons {
+        .hamburger-menu-icon {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .hero {
+    &-container {
+      .hero-info {
+        max-width: 400px;
+        .title {
+          font-size: 48px;
+        }
+        .description {
+          font-size: 16px;
+        }
+        .btn-dark {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .product {
+    &-container {
+      .product-cards {
+        flex-direction: column;
+      }
+    }
+  }
+
+  .reviews {
+    &-container {
+      .review-cards {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .hero {
+    &-container {
+      .hero-info {
+        width: 300px;
+        .title {
+          font-size: 40px;
+        }
+        .description {
+          font-size: 14px;
+        }
+        .btn-dark {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

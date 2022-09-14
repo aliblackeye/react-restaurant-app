@@ -1,0 +1,32 @@
+.about {
+  padding: 15px;
+  &-container {
+    .title {
+      color: #fff;
+      border-bottom: 2px solid #fff;
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .about-wrapper {
+      display: flex;
+      gap: 15px;
+      color: #fff;
+
+      .about-img {
+        width: 50%;
+        img {
+          border-radius: 15px;
+        }
+      }
+
+      .about-info {
+        width: 50%;
+
+        &-description {
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}

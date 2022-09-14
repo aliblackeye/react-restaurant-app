@@ -1,0 +1,60 @@
+.menu {
+  
+  padding: 15px;
+
+  &-container {
+    .title {
+      color: #fff;
+      border-bottom: 2px solid #fff;
+      margin-bottom: 15px;
+      font-size: 32px
+    }
+
+    .menu-cards {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+
+      .menu-card {
+        width: 100%;
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        .card-img {
+          width: 100%;
+          height: 100%;
+          max-height: 200px;
+          margin: auto;
+          img {
+            object-fit: contain;
+          }
+        }
+
+        .card-title {
+          text-align: center;
+        }
+
+        .card-price {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+
+          .price {
+            font-size: 18px;
+          }
+
+          .discount {
+            font-size: 12px;
+            color: #666;
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+  }
+}

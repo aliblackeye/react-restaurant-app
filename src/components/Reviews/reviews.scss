@@ -1,0 +1,63 @@
+.reviews {
+  padding: 15px;
+
+  &-container {
+    .title {
+      color: #fff;
+      border-bottom: 2px solid #fff;
+      margin-bottom: 15px;
+    }
+
+    .review-cards {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+
+      .review-card {
+        width: 100%;
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        height: 450px;
+
+        .review-icon {
+          width: 100%;
+          max-height: 200px;
+          text-align: center;
+        }
+
+        .description {
+          font-size: 14px;
+          text-align: center;
+          color: #333;
+        }
+
+        .customer-img {
+          width: 48px;
+          height: 48px;
+          
+          img {
+            border-radius: 50%;
+          }
+        }
+
+        .customer-name {
+          font-size: 18px;
+          font-weight: 500;
+          color: #b57d55;
+        }
+
+        .customer-stars {
+          display: flex;
+          justify-content: center;
+          gap: 4px;
+        }
+      }
+    }
+  }
+}

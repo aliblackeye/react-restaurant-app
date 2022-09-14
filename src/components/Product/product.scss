@@ -1,0 +1,76 @@
+.product {
+  padding: 15px;
+
+  &-container {
+    .title {
+      color: #fff;
+      border-bottom: 2px solid #fff;
+      margin-bottom: 15px;
+    }
+
+    .product-cards {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+
+      .product-card {
+        width: 100%;
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        position: relative;
+        height: 450px;
+
+        .card-img {
+          width: 75%;
+          height: 75%;
+
+          img {
+            object-fit: contain;
+          }
+        }
+
+        .card-wrapper {
+          padding: 15px;
+          position: absolute;
+          z-index: 2;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .card-infos {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .price-and-calories {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+
+              .price {
+                font-size: 24px;
+                font-weight: 500;
+              }
+
+              .calories {
+                font-size: 12px;
+                color: #666;
+              }
+            }
+          }
+        }
+
+        .card-title {
+          text-align: left;
+        }
+      }
+    }
+  }
+}

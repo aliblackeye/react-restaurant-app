@@ -1,0 +1,44 @@
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  .hero-img {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    filter: brightness(0.8);
+  }
+
+  &-container {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .hero-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      .title {
+        text-align: center;
+        font-size: 80px;
+        font-weight: 600;
+        color: #fff;
+        line-height: 1;
+      }
+
+      .description {
+        color: #fff;
+        font-weight: 300;
+        text-align: center;
+        font-size: 18px;
+      }
+
+      .btn-dark {
+        font-size: 18px;
+      }
+    }
+  }
+}

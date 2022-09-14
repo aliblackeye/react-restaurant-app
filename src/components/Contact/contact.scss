@@ -1,0 +1,52 @@
+.contact {
+  padding: 15px;
+  &-container {
+    .title {
+      font-size: 32px;
+      color: #fff;
+      border-bottom: 2px solid #fff;
+      margin-bottom: 15px;
+    }
+
+    .contact-wrapper {
+      display: flex;
+      background-color: #222;
+      height: 400px;
+
+      .google-map-container,
+      .contact-infos {
+        width: 50%;
+      }
+
+      .contact-infos {
+        padding: 15px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        &-title {
+          color: #fff;
+          font-weight: 500;
+        }
+
+        .contact-form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 15px;
+          width: 100%;
+
+          .input-item {
+            width: 100%;
+            border: 1px solid #fff;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
